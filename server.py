@@ -3,7 +3,7 @@ from threading import Thread
 import time
 
 sock = socket(AF_INET, SOCK_STREAM)
-sock.bind(('localhost', 8080))
+sock.bind(('0.0.0.0', 8080))
 sock.listen(5)
 sock.setblocking(False)
 
